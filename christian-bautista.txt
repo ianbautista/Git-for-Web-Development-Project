@@ -1,0 +1,104 @@
+https://codepen.io/christianbautista/pen/oNjqJyQ?editors=1100
+
+    1. What is Semantic HTML? 
+        Markup that gives meaning to the page.
+    2. What is HTML used for? 
+        For structuring and conent on a webpage.
+    3. What is an attribute and where do we put it?
+        Attributes adds extra detail to elements. It is placed inside the opening tag. 
+    4. What is the h1 tag used for? How many times should I use it on a page?
+        It is used to identify the most important text on a page. It should only be used once.
+    5. Name two tags that have required attributes
+        <img> tag requires src attribute. <a> tag requires an href attribute.
+    6. What do we put in the head of our HTML document? 
+        The head element contains information that's not part of the page. Like Title of the page, what version of HTML are we writing, links to CSS and Javascript files.
+    7. What is an id? 
+        It is an attribute that specifies a unique name for an element. That will later be used to identify said element. It is the most specific selector compare to element and class in CSS.
+    8. What elements can I add an id to?
+        All elements within the body and footer of the html.
+    9. How many times can I use the same id on a page? 
+        You can technically use an ID to more than one element, but it would defeat the purpose of the ID. So, it should only be used once.
+    10. What is a class? 
+        Class is another attribute that can be used multiple times in multiple elements. It is less specific to and ID but more specific than an element selector in CSS.
+    11. What elements can I add a class to? 
+        All elements within the body and footer of the html.
+    12. How many times can I use the same class on a page?
+        You can use the same class infinite number of times.
+    13. How do I get my link to open in a new tab?
+        You use the target attribute within the <a> tag it should have a value of "_blank". Like this <a href="" target="_blank">
+    14. What is the alt attribute in the image tag used for? 
+        It is an alternate text to the image that best describes the image mainly used for accessibility and SEO.
+    15. How do I reference an id?
+        To reference an id you use the # sign followed by the ID name like #IDName.
+    16. What is the difference between a section and a div?
+        Section is a semantic tag. Div is a presentational tag. They both function the same way but to give meaning to the html. Section is best used with content and divs are best used for structural purposes.
+    17. What is CSS used for? 
+        It is used for styling web pages. 
+    18. How do we select an element? Example - every h2 on the page
+        To select every h2 on the page just type h2 {}
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one
+        An id is used if we want to identify one specific element and a class can be used to identify multiple elements.  
+        You will use an ID if you know that your will want to isolate a design to a specific element. Like assigning an ID to your logo on a website. You know that there's only one of that on the page. You use a class if you want multiple elements to be affected by the styling like change font styling or color in your page.
+    20. How do we select classes in CSS?
+        We use . then the class name. Like .ClassName
+    21. How do we select a p element with a single class of “human””?
+        we select it by first selecting the element name immediately followed by the class name without spaces. Like p.human {}
+    22. What is a parent child selector? When would this be useful? 
+        It is used to select elements nested within other elements. You can use it to add a layer of specificty to your section. Say you only want to apply a styling to an element if its only nested within another element.
+    23. How do you select all links within a div with the class of sidebar?
+        div.sidebar a {}
+    24. What is a pseudo selector?
+        pseudo selectors are selectors used to change that state of a particular selector
+    25. What do we use to change the spacing between lines?
+        we use line-height property
+    26. What do we use to change the spacing between letters?
+        We use the letter-spacing property
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+        we use the text-transform property
+    28. How do I add a 1px border around my div that is dotted and black?
+        you use the border proerty with values 1px dotted black. Like this border: 1px dotted black
+    29. How do I select everything on the page? 
+        you use the universal selector or sometimes called the star or wild card selector. You will type an asterisk like this * {}
+    30. How do I write a comment in CSS?
+        You write a comment like this /* comment here*/
+    31. How do I find out what file I am in, when I am using the command line? 
+        It shows on the command line before the cursor the path where you are.
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+        you type ls
+    33. How do I remove a file via the command line? Why do I have to be careful with this? 
+        you type rm followed by the file name. Command line doesn't give you a warning to confirm deletion unline in GUIs.
+    34. Why should I use version control? 
+        This gives us the power to time travel if there is a fix we need to do or go back and look at our code.
+    35. How often should I commit to github?
+        The ideal is at least once a day to push your work.
+    36. What is the command we would use to push our repo up to github? 
+        git push or if we are pushing it on our branch its git push -u origin branchname
+    37. Walk me through Lambda's git flow. 
+        Lambda's workflow for every project starts with forking the project repo then adding your TL as collaborator. 
+        After that you clone the repo using the command line, then creating a branch with the student's first name and last name (e.g. christian-bautista)
+        Then the Project repo will then be submitted in to the student's created branch.
+        Once the work has been pushed, you will then do a pull request using your fork as the base, then add your TL as a reviewer on the pull request.
+
+Stretch Questions
+
+    1. What is the difference between an inline element and a block element?
+        An inline element doesn't cover the entire width of the page while a block covers the entire width of the page hence always starting on a new line.
+    2. What happens when an element is positioned absolutely? 
+        When an element is positioned absolutely it is placed in an exact location on the page.
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+        use the display property and assign a value of inline-block. 
+    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+        Block Elements:
+            a. <p>
+            b. <div>
+            c. <nav>
+        Inline Elements:
+            a. <span> 
+            b. <a>
+        Inline-Block Element:
+            a. <button>
+    5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
+        The box model is the way how elements are modeled in a webpage. The box model consist of four properties. The content, padding, border, and the margin.
+        If we use a house analogy. and look at the house from a bird's eye view. We can think of the content as the house, the padding as the lawn that surrounds your house and is in between your house (content) and your fence (border).
+        Border is the fence and margin as the field that surrounds your property.
+        A fix is to use the property box-sizing with the value border-box. This will contain the width to whatever you set it to.
